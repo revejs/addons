@@ -1,10 +1,12 @@
 import { Accessor, createEffect, createCarefulSignal, Update, createEmptySignal } from 'revejs';
 
-export const onChange = (input: HTMLInputElement): [Accessor<string>, Update<string>]=> {
+export const onChange = (input: HTMLInputElement, filter: (pref: string) => string = (v => v)): [Accessor<string>, Update<string>]=> {
   const [text, setText] = createCarefulSignal(input.value);
 
-  input.addEventListener('keyup', () => setText(input.value));
-  input.addEventListener('keydown', () => setText(input.value));
+  const listener = () => setText(filter(input.value))
+
+  input.addEventListener('keyup', listener);
+  input.addEventListener('keydown', listener);
 
   createEffect(() => {
     input.value = text();
