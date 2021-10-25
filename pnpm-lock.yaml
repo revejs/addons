@@ -1,17 +1,17 @@
 lockfileVersion: 5.3
 
 specifiers:
-  revejs: ^0.3.3
+  revejs: ^0.3.4
   typescript: ^4.4.3
 
 devDependencies:
-  revejs: 0.3.3
+  revejs: 0.3.4
   typescript: 4.4.3
 
 packages:
 
-  /revejs/0.3.3:
-    resolution: {integrity: sha512-BrTdJeQySc4TkwMCjEVcMIAPJhE/z0L89zMvFa1wIcP9cdZyrP1ZUdB5H40/3Moh5yGUax16fL/WUPTpotg6BA==}
+  /revejs/0.3.4:
+    resolution: {integrity: sha512-ckjy4jPIxD+XmfugS2lEf5ywP5N5VuEeiI3OMg65US4vXP9Kk21o/w4M4ES0hh/tGTr1gPif0qBOji6VveNyHA==}
     dev: true
 
   /typescript/4.4.3:

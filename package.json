@@ -5,10 +5,10 @@
   "main": "./dist/index.js",
   "devDependencies": {
     "typescript": "^4.4.3",
-    "revejs": "^0.3.3"
+    "revejs": "^0.3.4"
   },
   "peerDependencies": {
-    "revejs": "^0.3.3"
+    "revejs": "^0.3.4"
   },
   "scripts": {
     "start": "tsc",

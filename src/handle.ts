@@ -1,4 +1,4 @@
-import { Accessor, createEffect, createCarefulSignal, Update } from 'revejs';
+import { Accessor, createEffect, createCarefulSignal, Update, createEmptySignal } from 'revejs';
 
 export const onChange = (input: HTMLInputElement): [Accessor<string>, Update<string>]=> {
   const [text, setText] = createCarefulSignal(input.value);
@@ -11,4 +11,12 @@ export const onChange = (input: HTMLInputElement): [Accessor<string>, Update<str
   }, [text])
 
   return [text, setText]
+}
+
+export const onClick = (element: Element) => {
+  const click = createEmptySignal();
+
+  element.addEventListener('click', click);
+
+  return click;
 }
