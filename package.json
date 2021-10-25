@@ -1,0 +1,25 @@
+{
+  "name": "@revejs/addons",
+  "author": "Untlsn",
+  "version": "0.1.0",
+  "main": "./dist/index.js",
+  "devDependencies": {
+    "typescript": "^4.4.3",
+    "revejs": "^0.3.3"
+  },
+  "peerDependencies": {
+    "revejs": "^0.3.3"
+  },
+  "scripts": {
+    "start": "tsc",
+    "watch": "tsc --watch"
+  },
+  "repository": {
+    "directory": "https://github.com/revejs/addons.git",
+    "type": "git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "Rx", "reactive", "light", "revejs", "addons"
+  ]
+}
